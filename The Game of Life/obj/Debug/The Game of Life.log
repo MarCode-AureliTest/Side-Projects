@@ -1,0 +1,15 @@
+﻿  ofApp.cpp
+c:\ece 270 - fall\of_v0.10.0_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(326): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+c:\ece 270 - fall\of_v0.10.0_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(331): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+c:\ece 270 - fall\of_v0.10.0_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(912): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+c:\ece 270 - fall\of_v0.10.0_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(913): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+c:\ece 270 - fall\of_v0.10.0_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(914): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+c:\ece 270 - fall\of_v0.10.0_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(915): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  The Game of Life.vcxproj -> C:\Users\Gerry\source\repos\The Game of Life\bin\The Game of Life_debug.exe
+  
+  	                   2	C:\ECE 270 - Fall\of_v0.10.0_vs2017_release\libs\fmodex\lib\vs\x64\
+  	  *EXTRA File 		 6402560	C:\Users\Gerry\source\repos\The Game of Life\bin\FreeImage.dll
+  
+  	                   1	C:\ECE 270 - Fall\of_v0.10.0_vs2017_release\libs\FreeImage\lib\vs\x64\
+  	  *EXTRA File 		 1503232	C:\Users\Gerry\source\repos\The Game of Life\bin\fmodex64.dll
+  	  *EXTRA File 		 1552384	C:\Users\Gerry\source\repos\The Game of Life\bin\fmodexL64.dll
