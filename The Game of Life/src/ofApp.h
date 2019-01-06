@@ -10,6 +10,7 @@ class ofApp : public ofBaseApp{
 
 		CellBoard pool;
 		int fps;
+		int selector;
 
 		void setup();
 		void update();

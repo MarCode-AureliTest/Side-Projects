@@ -2,9 +2,10 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
-	fps = 8;
+	fps = 10;
 	ofSetFrameRate(fps);
 	ofSetBackgroundColor(0, 0, 0);
+	selector = 0;
 }
 
 //--------------------------------------------------------------
@@ -52,7 +53,12 @@ void ofApp::mousePressed(int x, int y, int button){
 
 //--------------------------------------------------------------
 void ofApp::mouseReleased(int x, int y, int button){
-
+	if (button == 2)
+	{
+		selector = selector + 1;
+		if (selector == 1) pool.randomGrowth();
+		if (selector == 2) pool.stillLifes();
+	}
 }
 
 //--------------------------------------------------------------

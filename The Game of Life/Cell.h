@@ -11,10 +11,10 @@ public:
 	void alive();
 	int getAlive();
 	~Cell();
-	int isOccupied;
+
 private:
 
-
+	int isOccupied;
 
 };
 

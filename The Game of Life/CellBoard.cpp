@@ -1,10 +1,34 @@
 #include "CellBoard.h"
 
 
-
+//initializes empty cellboard
 CellBoard::CellBoard()
 {
 	cellMax = 500;
+	for (int j = 0; j < cellMax; j++)
+	{
+		for (int i = 0; i < cellMax; i++)
+		{
+			matrix[i][j].set(5 * i, 5 * j, 5, 5, 0);
+		}
+	}
+}
+
+void CellBoard::clear()
+{
+	for (int j = 0; j < cellMax; j++)
+	{
+		for (int i = 0; i < cellMax; i++)
+		{
+			matrix[i][j].die();
+		}
+	}
+}
+
+//randomly generates colonies and plays simulation
+void CellBoard::randomGrowth()
+{
+	clear();
 	for (int j = 0; j < cellMax; j++)
 	{
 		for (int i = 0; i < cellMax; i++)
@@ -15,6 +39,44 @@ CellBoard::CellBoard()
 		}
 	}
 }
+
+//presents the still-life patterns
+void CellBoard::stillLifes()
+{
+	clear();
+	//displays "block" still-life
+	block(50);
+	//displays "beehive" still-life
+	beehive(50, 54);
+
+}
+
+void CellBoard::block(int offset)
+{
+	for (int j = 0; j < 2; j++)
+	{
+		for (int i = 0; i < 2; i++)
+		{
+			matrix[offset + i][offset + j].alive();
+		}
+	}
+}
+
+void CellBoard::beehive(int xoffset, int yoffset)
+{
+	matrix[xoffset][yoffset].alive();
+	matrix[xoffset - 1][yoffset + 1].alive();
+	matrix[xoffset - 1][yoffset + 2].alive();
+	matrix[xoffset][yoffset + 3].alive();
+	matrix[xoffset + 1][yoffset + 1].alive();
+	matrix[xoffset + 1][yoffset + 2].alive();
+}
+
+void CellBoard::loaf(int xoffset, int yoffset)
+{
+
+}
+
 void CellBoard::draw()
 {
 	for (int j = 0; j < cellMax; j++)
@@ -47,6 +109,7 @@ void CellBoard::update()
 	}
 }
 
+//Checks neighbors of cell and returns how many alive neighbors 
 int CellBoard::checkNeighbor(int iIn, int jIn)
 {
 	int liveNeighbors = 0;
